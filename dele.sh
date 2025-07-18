@@ -4,3 +4,6 @@ rm -rf autorebase.bat clang64.ico clangarm64.exe mingw32 mingw32.ini mingw64.ico
 mv minish/* ./
 go build -o minish.exe minish.go
 go build -o opt/pathread.exe opt/pathread.go
+go build -o opt/dlzip/dlzip.exe opt/dlzip/dlzip.go
+go build -o opt/insert/insert.exe opt/insert/insert.go
+go build -o opt/rgd/rgd.exe opt/rgd/rgd.go
