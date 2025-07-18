@@ -15,7 +15,6 @@
 # https://github.com/niXman/mingw-builds-binaries/releases
 # https://github.com/clangd/clangd/releases
 # https://github.com/denoland/deno/releases
-# https://github.com/junegunn/fzf/releases
 # https://github.com/sharkdp/bat/releases
 # https://rubyinstaller.org/downloads/
 # https://github.com/dandavison/delta/releases
