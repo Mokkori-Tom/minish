@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    cmd := exec.Command("./usr/bin/bash", "bash", "./init.sh")
+    cmd := exec.Command("./usr/bin/bash", "./init.sh")
     cmd.Stdout = os.Stdout
     cmd.Stderr = os.Stderr
     cmd.Stdin = os.Stdin
