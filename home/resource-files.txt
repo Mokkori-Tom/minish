@@ -1,9 +1,9 @@
 # https://www.python.org/downloads/windows
 # https://bootstrap.pypa.io/pip/get-pip.py
 # $ python -m pip install --upgrade pip setuptools wheel
-# pipリセット(pip, setuptools, wheel は残すのが吉)
-# pip freeze > pkgs.txt
-# pip uninstall -y -r pkgs.txt
+# $ pipリセット(pip, setuptools, wheel は残すのが吉)
+# $ pip freeze > pkgs.txt
+# $ pip uninstall -y -r pkgs.txt
 
 # https://github.com/PintaProject/Pinta/releases
 # https://github.com/BurntSushi/ripgrep/releases
