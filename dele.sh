@@ -8,4 +8,7 @@ go build -o opt/pathread.exe opt/pathread.go
 go build -o opt/dlzip/dlzip.exe opt/dlzip/dlzip.go
 go build -o opt/insert/insert.exe opt/insert/insert.go
 go build -o opt/rgd/rgd.exe opt/rgd/rgd.go
+
+rm -rf ./minish/
 start ./minish
+exit
