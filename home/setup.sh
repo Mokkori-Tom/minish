@@ -5,3 +5,5 @@ pacman-key --populate msys2
 pacman -Sy
 pacman -S git
 pacman -S tmux
+# https://github.com/tmux/tmux/wiki/Getting-Started
+# tmux new
