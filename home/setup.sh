@@ -7,3 +7,4 @@ pacman -S git
 pacman -S tmux
 # https://github.com/tmux/tmux/wiki/Getting-Started
 # tmux new
+pacman -S tree
