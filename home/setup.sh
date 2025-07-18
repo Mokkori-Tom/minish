@@ -1,3 +1,4 @@
+# run on new shell
 cp /etc/pacman.conf /tmp/pacman.conf
 sed -i 's|^#\(XferCommand = /usr/bin/curl \)\(.*\)|\1-k \2|' /tmp/pacman.conf
 # (注意:-k SSL認証OFF)
