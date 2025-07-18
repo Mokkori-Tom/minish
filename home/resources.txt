@@ -7,7 +7,6 @@
 # $ pip uninstall -y -r pkgs.txt
 
 # https://packages.msys2.org/packages/
-# https://www.7-zip.org/download.html ->7za.exe ->7z.exeに書き換え
 # https://github.com/PintaProject/Pinta/releases
 # https://github.com/BurntSushi/ripgrep/releases
 # https://github.com/neovim/neovim/releases
