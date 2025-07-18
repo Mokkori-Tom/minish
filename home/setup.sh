@@ -14,5 +14,7 @@ pacman -S tmux --config /tmp/pacman.conf -y
 # tmux new
 pacman -S tree --config /tmp/pacman.conf -y
 
+source .bashrc
+
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --no-update-rc
