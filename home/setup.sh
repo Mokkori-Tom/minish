@@ -5,6 +5,7 @@ pacman-key --init --config /tmp/pacman.conf
 pacman-key --populate msys2 --config /tmp/pacman.conf
 pacman -Sy --config /tmp/pacman.conf
 pacman -S git --config /tmp/pacman.conf
+pacman -S unzip --config /tmp/pacman.conf
 pacman -S tmux --config /tmp/pacman.conf
 # https://github.com/tmux/tmux/wiki/Getting-Started
 # tmux new
