@@ -26,4 +26,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --no-update-rc
 
 dlzip https://go.dev/dl/go1.24.5.windows-amd64.zip $OPT/go
+
 dlzip https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip $OPT/python
+sed -i 's/^#import site$/import site/' "$OPT/python/python312._pth"
+wget -O $OPT/python/get-pip.py https://bootstrap.pypa.io/pip/get-pip.py
+source .bashrc
+python $OPT/python/get-pip.py
+
