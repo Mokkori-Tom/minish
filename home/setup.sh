@@ -35,4 +35,4 @@ python $OPT/python/get-pip.py
 source .bashrc
 python -m pip install --upgrade pip setuptools wheel
 
-
+dlzip https://github.com/PintaProject/Pinta/releases/download/3.0.2/pinta-3.0.2.zip $OPT/pinta
