@@ -32,4 +32,7 @@ sed -i 's/^#import site$/import site/' "$OPT/python/python312._pth"
 wget -O $OPT/python/get-pip.py https://bootstrap.pypa.io/pip/get-pip.py
 source .bashrc
 python $OPT/python/get-pip.py
+source .bashrc
+python -m pip install --upgrade pip setuptools wheel
+
 
