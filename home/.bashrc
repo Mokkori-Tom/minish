@@ -28,6 +28,9 @@ alias pip='$OPT/python/Scripts/pip'
 $OPT/pathread
 source $OPT/.paths
 
+# windows system path 
+source $HOME/.pathrc
+
 # HISTFILE
 export HISTFILE="$HOME/.bash_history"
 export HISTSIZE=10000
