@@ -1,4 +1,8 @@
 # run on old shell unzip new root(/)
+# $ wget -O https://github.com/msys2/msys2-installer/releases/download/2025-06-22/msys2-base-x86_64-20250622.tar.xz
+# $ 7za x msys2-base-x86_64-20250622.tar.xz
+# $ 7za x msys2-base-x86_64-20250622.tar
+# $ cd msys64/
 # $ git clone https://github.com/Mokkori-Tom/minish
 # $ mv minish/dele.sh ./
 # $ bash dele.sh
