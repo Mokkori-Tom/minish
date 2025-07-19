@@ -13,6 +13,7 @@
 # https://nodejs.org/ja/downloads
 # https://github.com/LuaLS/lua-language-server/releases
 # https://github.com/niXman/mingw-builds-binaries/releases
+# https://github.com/niXman/mingw-builds-binaries/releases/download/15.1.0-rt_v12-rev0/x86_64-15.1.0-release-posix-seh-ucrt-rt_v12-rev0.7z
 # https://github.com/clangd/clangd/releases
 # https://github.com/denoland/deno/releases
 # https://github.com/sharkdp/bat/releases
