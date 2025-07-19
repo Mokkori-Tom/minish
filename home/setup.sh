@@ -58,8 +58,8 @@ dlzip https://go.dev/dl/go1.24.5.windows-amd64.zip $OPT/go
 dlzip https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip $OPT/python
 sed -i 's/^#import site$/import site/' "$OPT/python/python312._pth"
 wget -O $OPT/python/get-pip.py https://bootstrap.pypa.io/pip/get-pip.py
-python -m $OPT/python/get-pip.py
-python -m pip install --upgrade pip setuptools wheel
+python $OPT/python/get-pip.py
+pip install --upgrade setuptools wheel
 
 dlzip https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-gnu.zip $OPT/ripgrep
 dlzip https://github.com/neovim/neovim/releases/download/v0.11.3/nvim-win64.zip $OPT/nvim
