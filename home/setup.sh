@@ -36,7 +36,6 @@ python $OPT/python/get-pip.py
 source .bashrc
 python -m pip install --upgrade pip setuptools wheel
 
-dlzip https://github.com/PintaProject/Pinta/releases/download/3.0.2/pinta-3.0.2.zip $OPT/pinta
 dlzip https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-gnu.zip $OPT/ripgrep
 dlzip https://github.com/neovim/neovim/releases/download/v0.11.3/nvim-win64.zip $OPT/nvim
 dlzip https://nodejs.org/dist/v22.17.1/node-v22.17.1-win-x64.zip $OPT/node
