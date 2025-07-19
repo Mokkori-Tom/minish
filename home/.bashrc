@@ -13,7 +13,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CONFIG_DIRS=/etc/xdg
 
 # gopath or gomodule
-# export GOPATH=$OPT/go/go/
+export GOPATH=$OPT/go/go/
 
 export EDITOR=nvim
 
