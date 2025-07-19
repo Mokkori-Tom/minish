@@ -1,36 +1,6 @@
 # run on new shell home
 # *リンク先の各ライセンスに注意
 
-export PATH="$PATH:$OPT"
-export PATH="$PATH:$OPT/7zip"
-export PATH="$PATH:$OPT/7zip/arm64"
-export PATH="$PATH:$OPT/7zip/x64"
-export PATH="$PATH:$OPT/bat/bat-v0.25.0-x86_64-pc-windows-gnu"
-export PATH="$PATH:$OPT/delta/delta-0.18.2-x86_64-pc-windows-msvc"
-export PATH="$PATH:$OPT/dlzip"
-export PATH="$PATH:$OPT/fd/fd-v10.2.0-x86_64-pc-windows-gnu"
-export PATH="$PATH:$OPT/glow/glow_2.1.1_Windows_x86_64"
-export PATH="$PATH:$OPT/go/go/bin"
-export PATH="$PATH:$OPT/go/go/pkg/tool/windows_amd64"
-export PATH="$PATH:$OPT/go/go/src"
-export PATH="$PATH:$OPT/insert"
-export PATH="$PATH:$OPT/lazygit"
-export PATH="$PATH:$OPT/lualsp/bin"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/corepack/shims"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/corepack/shims/nodewin"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/npm/bin"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/npm/bin/node-gyp-bin"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin"
-export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/npm/node_modules/node-gyp/gyp"
-export PATH="$PATH:$OPT/nvim/nvim-win64/bin"
-export PATH="$PATH:$OPT/nvim/nvim-win64/share/nvim/runtime/scripts"
-export PATH="$PATH:$OPT/python"
-export PATH="$PATH:$OPT/python/Scripts"
-export PATH="$PATH:$OPT/rgd"
-export PATH="$PATH:$OPT/ripgrep/ripgrep-14.1.1-x86_64-pc-windows-gnu"
-export PATH="$PATH:$OPT/uclip"
-
 cp /etc/pacman.conf /tmp/pacman.conf
 sed -i 's|^#\(XferCommand = /usr/bin/curl \)\(.*\)|\1-k \2|' /tmp/pacman.conf
 # (注意:-k SSL認証OFF)
@@ -58,8 +28,8 @@ dlzip https://go.dev/dl/go1.24.5.windows-amd64.zip $OPT/go
 dlzip https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip $OPT/python
 sed -i 's/^#import site$/import site/' "$OPT/python/python312._pth"
 wget -O $OPT/python/get-pip.py https://bootstrap.pypa.io/pip/get-pip.py
-python $OPT/python/get-pip.py
-pip install --upgrade setuptools wheel
+$OPT/python/python $OPT/python/get-pip.py
+$OPT/python/Scripts/pip install --upgrade setuptools wheel
 
 dlzip https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-gnu.zip $OPT/ripgrep
 dlzip https://github.com/neovim/neovim/releases/download/v0.11.3/nvim-win64.zip $OPT/nvim
