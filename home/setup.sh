@@ -18,10 +18,10 @@ source $HOME/.bashrc
 
 mkdir $OPT/7zip
 wget -O $OPT/7zip/7zr.exe https://www.7-zip.org/a/7zr.exe
-source .bashrc
+source $HOME/.bashrc
 wget -O $OPT/7zip/7z2500-extra.7z https://www.7-zip.org/a/7z2500-extra.7z
 $OPT/7zip/7zr.exe x $OPT/7zip/7z2500-extra.7z -o"$OPT/7zip/"
-source ~/.bashrc
+source $HOME/.bashrc
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 $HOME/.fzf/install --key-bindings --completion --no-update-rc
@@ -32,7 +32,7 @@ dlzip https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip $
 sed -i 's/^#import site$/import site/' "$OPT/python/python312._pth"
 wget -O $OPT/python/get-pip.py https://bootstrap.pypa.io/pip/get-pip.py
 source $HOME/.bashrc
-python $OPT/python/get-pip.py
+python -m $OPT/python/get-pip.py
 source $HOME/.bashrc
 python -m pip install --upgrade pip setuptools wheel
 
