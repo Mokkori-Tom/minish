@@ -78,4 +78,6 @@ realtime_rg_fzf() {
   rm -f "$tmpfile"
 }
 # Bash kye
-bind -x '"\C-g": realtime_rg_fzf'
+if [[ $- == "*i*" ]]; then
+  bind -x '"\C-g": realtime_rg_fzf'
+fi
