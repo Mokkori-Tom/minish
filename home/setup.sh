@@ -18,7 +18,9 @@ source .bashrc
 
 mkdir $OPT/7zip
 wget -O $OPT/7zip/7zr.exe https://www.7-zip.org/a/7zr.exe
+source .bashrc
 dlzip https://www.7-zip.org/a/7z2500-extra.7z $OPT/7zip
+source .bashrc
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --no-update-rc
