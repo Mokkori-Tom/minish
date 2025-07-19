@@ -26,6 +26,7 @@ export PATH="$PATH:$OPT/node/node-v22.17.1-win-x64/node_modules/npm/node_modules
 export PATH="$PATH:$OPT/nvim/nvim-win64/bin"
 export PATH="$PATH:$OPT/nvim/nvim-win64/share/nvim/runtime/scripts"
 export PATH="$PATH:$OPT/python"
+export PATH="$PATH:$OPT/python/Scripts"
 export PATH="$PATH:$OPT/rgd"
 export PATH="$PATH:$OPT/ripgrep/ripgrep-14.1.1-x86_64-pc-windows-gnu"
 export PATH="$PATH:$OPT/uclip"
