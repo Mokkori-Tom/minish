@@ -12,6 +12,7 @@ export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CONFIG_DIRS=/etc/xdg
 
+export GOPATH=$OPT/go/go/
 export EDITOR=nvim
 
 # alias
