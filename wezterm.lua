@@ -32,19 +32,19 @@ config.front_end = "OpenGL"
 config.webgpu_power_preference = "HighPerformance"
 
 config.keys = {
-  -- 蝙ら峩蛻・牡
+  -- Vertical split (Ctrl-d)
   {
     key = "d",
     mods = "CTRL",
     action = wezterm.action.SplitVertical { domain = "CurrentPaneDomain" },
   },
-  -- 豌ｴ蟷ｳ蛻・牡
+  -- Horizontal split (Ctrl-s)
   {
     key = "s",
     mods = "CTRL",
     action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },
   },
-  -- 繝壹う繝ｳ遘ｻ蜍・
+  -- Move focus (Ctrl-h/j/k/l, Vim style)
   {
     key = "h",
     mods = "CTRL",
