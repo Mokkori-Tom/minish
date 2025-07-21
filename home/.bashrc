@@ -12,9 +12,7 @@ export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CONFIG_DIRS=/etc/xdg
 
-# gopath or gomodule
 export GOPATH=$OPT/go/go/
-
 export EDITOR=nvim
 
 # alias
@@ -22,6 +20,8 @@ alias ll='ls -la --color=auto'
 alias gimp="gimp --no-splash"
 alias krita="krita --nosplash"
 alias curlk='curl -k --ssl-no-revoke -L -O'
+alias wiki='nvim +VimwikiIndex'
+alias scad='$OPT/scad/openscad-2021.01/openscad.exe'
 
 # windowsのpythonダミーファイルに注意(削除する等)
 alias python='$OPT/python/python'
