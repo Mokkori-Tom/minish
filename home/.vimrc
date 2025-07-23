@@ -73,6 +73,10 @@ if executable('rg')
 endif
 let $FZF_DEFAULT_COMMAND = 'fd --type f --hidden --follow --exclude .git'
 
+" ========== fzf (プレビュー完全無効) ==========
+let g:fzf_vim = {}
+let g:fzf_vim.preview_window = []
+
 " ========== asyncomplete 設定（ファイル補完の明示登録） ==========
 au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
             \ 'name': 'file',
