@@ -85,7 +85,6 @@ require("lazy").setup({
     -- === Git連携 ===
     { "tpope/vim-fugitive",              cmd = "Git" },
     { "lewis6991/gitsigns.nvim",         event = "VeryLazy" },
-    { "kdheepak/lazygit.nvim",           cmd = "LazyGit" },
     { "sindrets/diffview.nvim",          cmd = "DiffviewOpen" },
 
     -- === LSP/補完/スニペット ===
