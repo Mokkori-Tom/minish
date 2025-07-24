@@ -32,12 +32,10 @@ $OPT/python/python $OPT/python/get-pip.py
 $OPT/python/Scripts/pip install --upgrade setuptools wheel
 
 dlzip https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-gnu.zip $OPT/ripgrep
-dlzip https://github.com/neovim/neovim/releases/download/v0.11.3/nvim-win64.zip $OPT/nvim
 dlzip https://nodejs.org/dist/v22.17.1/node-v22.17.1-win-x64.zip $OPT/node
 dlzip https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-win32-x64.zip $OPT/lualsp
 dlzip https://github.com/sharkdp/bat/releases/download/v0.25.0/bat-v0.25.0-x86_64-pc-windows-gnu.zip $OPT/bat
 dlzip https://github.com/dandavison/delta/releases/download/0.18.2/delta-0.18.2-x86_64-pc-windows-msvc.zip $OPT/delta
 dlzip https://github.com/sharkdp/fd/releases/download/v10.2.0/fd-v10.2.0-x86_64-pc-windows-gnu.zip $OPT/fd
 dlzip https://github.com/avih/uclip/releases/download/v0.6/uclip.version-0.6.zip $OPT/uclip
-dlzip https://github.com/jesseduffield/lazygit/releases/download/v0.53.0/lazygit_0.53.0_Windows_x86_64.zip $OPT/lazygit
 dlzip https://github.com/charmbracelet/glow/releases/download/v2.1.1/glow_2.1.1_Windows_x86_64.zip $OPT/glow
