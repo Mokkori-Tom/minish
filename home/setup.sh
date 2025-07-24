@@ -33,6 +33,8 @@ $OPT/python/python $OPT/python/get-pip.py
 $OPT/python/Scripts/pip install --upgrade setuptools wheel
 
 dlzip https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-gnu.zip $OPT/ripgrep
+dlzip https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-win.tar.gz $OPT/gitui
+$OPT/7zip/7za x $OPT/gitui/gitui-win.tar -o$OPT/gitui
 dlzip https://nodejs.org/dist/v22.17.1/node-v22.17.1-win-x64.zip $OPT/node
 dlzip https://github.com/LuaLS/lua-language-server/releases/download/3.15.0/lua-language-server-3.15.0-win32-x64.zip $OPT/lualsp
 dlzip https://github.com/sharkdp/bat/releases/download/v0.25.0/bat-v0.25.0-x86_64-pc-windows-gnu.zip $OPT/bat
