@@ -32,7 +32,7 @@ $OPT/pathread
 source $OPT/.paths
 
 # windows system path 
-source $HOME/.pathrc
+source $HOME/.pathrc.sh
 
 # HISTFILE
 export HISTFILE="$HOME/.bash_history"
