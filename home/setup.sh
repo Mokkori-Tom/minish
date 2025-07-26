@@ -11,7 +11,8 @@ pacman -S git --config /tmp/pacman.conf --noconfirm
 pacman -S unzip --config /tmp/pacman.conf --noconfirm
 pacman -S diffutils --config /tmp/pacman.conf --noconfirm
 pacman -S tmux --config /tmp/pacman.conf --noconfirm
-pacman -S mingw-w64-ucrt-x86_64-neovim --config /tmp/pacman.conf --noconfirm
+pacman -S vim --config /tmp/pacman.conf --noconfirm
+pacman -S python --config /tmp/pacman.conf --noconfirm
 # https://github.com/tmux/tmux/wiki/Getting-Started
 # tmux new
 pacman -S tree --config /tmp/pacman.conf --noconfirm
