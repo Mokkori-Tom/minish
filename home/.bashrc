@@ -46,7 +46,7 @@ shopt -s histappend 2>/dev/null
 [ -f "$HISTFILE" ] && history -r
 
 # PROMPT
-PS1="$VENV\[\e[32m\][$HOME_NAME]\[\e[36m\][$(date +%Y%m%d_%H:%M)]\[\e[0m\][\w]\n\$ "
+   PS1="$VENV\[\e[32m\][user1]\[\e[36m\][$(date +%Y%m%d_%H:%M)]\[\e[0m\][\w]\n\$ "
 
 # FZF(https://github.com/junegunn/fzf)
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -80,4 +80,10 @@ realtime_rg_fzf() {
 # Bash kye
 if [[ $- == "*i*" ]]; then
   bind -x '"\C-g": realtime_rg_fzf'
+fi
+
+# tmux run
+if [ -n "$PS1" ] && [ -z "$TMUX" ] && command -v tmux >/dev/null 2>&1; then
+  # シェルがインタラクティブ、かつtmux外、tmux有り
+  (tmux attach || tmux new)
 fi
