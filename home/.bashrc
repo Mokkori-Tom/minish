@@ -12,7 +12,7 @@ export XDG_CONFIG_DIRS=/etc/xdg
 export GOPATH=$OPT/go/bin
 export GOROOT=$OPT/go
 
-export EDITOR=nvim
+export EDITOR=vim
 
 # alias
 alias ll='ls -la --color=auto'
