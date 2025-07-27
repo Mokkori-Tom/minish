@@ -79,7 +79,6 @@ if [[ $- == "*i*" ]]; then
   bind -x '"\C-g": realtime_rg_fzf'
 fi
 
-# exec /usr/bin/bash -c mintty
 # tmux run
 # if [ -n "$PS1" ] && [ -z "$TMUX" ] && command -v tmux >/dev/null 2>&1; then
   # シェルがインタラクティブ、かつtmux外、tmux有り
