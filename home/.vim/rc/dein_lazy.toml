@@ -44,11 +44,6 @@ repo = 'rking/ag.vim'
 on_cmd = ['Ag']
 
 [[plugins]]
-repo = 'junegunn/fzf'
-on_cmd = ['Files', 'Rg']
-build = 'call fzf#install()' # { 'do': { -> fzf#install() } }に相当
-
-[[plugins]]
 repo = 'preservim/nerdtree'
 on_cmd = ['NERDTreeToggle']
 
