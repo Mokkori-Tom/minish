@@ -65,8 +65,14 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md'}]
 let mapleader = " "
 
 " --- FZF系（ファイル/grep） ---
-nnoremap <leader>f :Files<CR>     " f: fzfによるファイル検索
-nnoremap <leader>r :Rg<CR>        " r: ripgrepで全文検索
+" f: fzfによるファイル検索
+nnoremap <leader>f :Files<CR>
+" r: ripgrepで全文検索
+nnoremap <leader>r :Rg<CR>
+
+" ---  fzf (プレビュー完全無効) ---
+let g:fzf_vim = {}
+let g:fzf_vim.preview_window = []
 
 " --- ツリー/ターミナル ---
 nnoremap <leader>n :NERDTreeToggle<CR>  " n: NERDTreeファイラ切替
@@ -89,3 +95,4 @@ let g:UltiSnipsJumpBackwardTrigger   = "<C-k>"
 " --- 追記：vimwikiも分かりやすく ---
 " <leader>w でvimwikiのIndex表示等も設定可能
 nnoremap <leader>w :VimwikiIndex<CR>
+
