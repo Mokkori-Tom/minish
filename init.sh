@@ -9,3 +9,4 @@ export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/usr/local/bin"
 # bash起動-必ず最後に
 exec /usr/bin/bash
+# exec /usr/bin/bash -c mintty
