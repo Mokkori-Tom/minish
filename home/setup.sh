@@ -46,3 +46,7 @@ dlzip https://github.com/sharkdp/fd/releases/download/v10.2.0/fd-v10.2.0-x86_64-
 dlzip https://github.com/avih/uclip/releases/download/v0.6/uclip.version-0.6.zip $OPT/uclip
 dlzip https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-win.tar.gz $OPT/gitui
 dlzip https://github.com/charmbracelet/glow/releases/download/v2.1.1/glow_2.1.1_Windows_x86_64.zip $OPT/glow
+
+git clone https://github.com/Shougo/dein.vim ~/.cache/dein/repos/github.com/Shougo/dein.vim
+mkdir -p ~/.vim/rc
+touch ~/.vim/rc/dein.toml ~/.vim/rc/dein_lazy.toml
