@@ -1,3 +1,4 @@
+```vims
 " ========== プラグイン管理 ==========
 call plug#begin(expand('~/.vim/plugged'))
 Plug 'tpope/vim-fugitive'
@@ -124,3 +125,4 @@ let g:lsp_settings = {
 
 let g:vimwiki_list = [{'path': '~/mywiki/',
                       \ 'syntax': 'markdown', 'ext': 'md'}]
+```
