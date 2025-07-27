@@ -80,7 +80,7 @@ if [[ $- == "*i*" ]]; then
 fi
 
 # tmux run
-if [ -n "$PS1" ] && [ -z "$TMUX" ] && command -v tmux >/dev/null 2>&1; then
+# if [ -n "$PS1" ] && [ -z "$TMUX" ] && command -v tmux >/dev/null 2>&1; then
   # シェルがインタラクティブ、かつtmux外、tmux有り
-  (tmux attach || tmux new)
-fi
+#  (tmux attach || tmux new)
+# fi
