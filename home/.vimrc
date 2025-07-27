@@ -55,5 +55,3 @@ set smartindent
 set backspace=indent,eol,start
 set laststatus=2
 set updatetime=300
-syntax enable
-filetype plugin indent on
