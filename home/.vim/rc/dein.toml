@@ -64,6 +64,10 @@ repo = 'tpope/vim-commentary'
 repo = 'sheerun/vim-polyglot'
 
 [[plugins]]
+repo = 'junegunn/fzf'
+build = 'call fzf#install()'
+
+[[plugins]]
 repo = 'junegunn/fzf.vim'
 
 [[plugins]]
