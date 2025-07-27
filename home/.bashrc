@@ -1,12 +1,9 @@
 # msys2 (https://github.com/msys2/msys2-installer/releases)
-export APPDATA=$HOME/.config # windows appdata path
-export download=C:/Users/$USERNAME/Downloads # windows DL path
-
 export LANGUAGE=ja_JP.ja
 export LANG=ja_JP.UTF-8
 
 # https://wiki.archlinux.org/title/XDG_Base_Directory
-export XDG_DATA_HOME=$HOME/.local/share 
+export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CONFIG_HOME=$HOME/.config
@@ -22,7 +19,7 @@ alias ll='ls -la --color=auto'
 alias gimp="gimp --no-splash"
 alias krita="krita --nosplash"
 alias curlk='curl -k --ssl-no-revoke -L -O'
-alias wiki='nvim +VimwikiIndex'
+alias wiki='vim +VimwikiIndex'
 alias scad='$OPT/scad/openscad-2021.01/openscad.exe'
 
 # windowsのpythonダミーファイルに注意(削除する等)
@@ -33,7 +30,7 @@ alias pip='$OPT/python/Scripts/pip'
 $OPT/pathread
 source $OPT/.paths
 
-# windows system path 
+# windows system path
 source $HOME/.pathrc.sh
 
 # HISTFILE
@@ -45,8 +42,8 @@ export HISTIGNORE="ls:bg:fg:history:pwd"
 shopt -s histappend 2>/dev/null
 [ -f "$HISTFILE" ] && history -r
 
-# PROMPT
-   PS1="$VENV\[\e[32m\][user1]\[\e[36m\][$(date +%Y%m%d_%H:%M)]\[\e[0m\][\w]\n\$ "
+# 動的プロンプト：毎回更新される日付付き
+PROMPT_COMMAND='PS1="$VENV\[\e[32m\][user1]\[\e[36m\][$(date +%Y%m%d_%H:%M)]\[\e[0m\][\w]\n\$ "'
 
 # FZF(https://github.com/junegunn/fzf)
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -54,7 +51,7 @@ shopt -s histappend 2>/dev/null
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# 1. Command Conp bash> Ctrl+R → echo 'hello' 
+# 1. Command Conp bash> Ctrl+R → echo 'hello'
 # 2. File Conp bash> vim Ctrl+T → vim /etc/passw
 
 realtime_rg_fzf() {
