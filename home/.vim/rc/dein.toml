@@ -1,3 +1,8 @@
+# ========================
+# ~/.vim/rc/dein.toml
+# ========================
+
+# === dein本体 & 実行補助 ===
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
@@ -16,6 +21,7 @@ hook_post_update = '''
   let g:dein#plugin.build = cmd
 '''
 
+# === ステータスライン・UI強化 ===
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 depends = ['vim-airline-themes']
@@ -24,45 +30,41 @@ depends = ['vim-airline-themes']
 repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
-repo = 'elzr/vim-json'
-if = '''! has('kaoriya')'''
-# メインプラグイン群
+repo = 'itchyny/lightline.vim'  # 最軽量ステータスライン選択肢
 
+# === カラースキーム・テーマ ===
 [[plugins]]
 repo = 'tomasr/molokai'
 
+# === JSON強化 ===
 [[plugins]]
-repo = 'itchyny/lightline.vim'
+repo = 'elzr/vim-json'
+if = '''! has("kaoriya")'''
 
+# === 補完・LSP・補助系 ===
 [[plugins]]
-repo = 'Yggdroot/indentLine'
-
+repo = 'prabirshrestha/vim-lsp'
 [[plugins]]
-repo = 'bronson/vim-trailing-whitespace'
-
-[[plugins]]
-repo = 'scrooloose/syntastic'
-
-[[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
-
-# dein.toml (Plug記法diff変換)
-[[plugins]]
-repo = 'tpope/vim-fugitive'
+repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
-repo = '907th/vim-auto-save'
-
-
+repo = 'prabirshrestha/asyncomplete.vim'
 [[plugins]]
-repo = 'ryanoasis/vim-devicons'
-
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
 [[plugins]]
-repo = 'tpope/vim-commentary'
-
+repo = 'prabirshrestha/asyncomplete-file.vim'
 [[plugins]]
-repo = 'sheerun/vim-polyglot'
+repo = 'prabirshrestha/asyncomplete-buffer.vim'
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-tags.vim'
 
+# === スニペット ===
+[[plugins]]
+repo = 'SirVer/ultisnips'
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+# === 検索/ジャンプ/履歴 ===
 [[plugins]]
 repo = 'junegunn/fzf'
 build = 'call fzf#install()'
@@ -71,30 +73,31 @@ build = 'call fzf#install()'
 repo = 'junegunn/fzf.vim'
 
 [[plugins]]
-repo = 'airblade/vim-gitgutter'
+repo = 'ctrlpvim/ctrlp.vim'
 
-[[plugins]]
-repo = 'SirVer/ultisnips'
-
-[[plugins]]
-repo = 'honza/vim-snippets'
-
+# === ツリー・ファイラ ===
 [[plugins]]
 repo = 'vimwiki/vimwiki'
 
-# LSP/補完
+# === コード補助・ユーティリティ ===
 [[plugins]]
-repo = 'prabirshrestha/vim-lsp'
+repo = 'Yggdroot/indentLine'
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+[[plugins]]
+repo = 'scrooloose/syntastic'
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'tpope/vim-commentary'
+[[plugins]]
+repo = '907th/vim-auto-save'
 
+# === 補助・Polyglot・Icons ===
 [[plugins]]
-repo = 'mattn/vim-lsp-settings'
-
+repo = 'sheerun/vim-polyglot'
 [[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-file.vim'
+repo = 'ryanoasis/vim-devicons'
 
