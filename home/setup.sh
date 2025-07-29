@@ -6,7 +6,7 @@ sed -i 's|^#\(XferCommand = /usr/bin/curl \)\(.*\)|\1-k \2|' /tmp/pacman.conf
 # (注意:-k SSL認証OFF)
 pacman-key --init --config /tmp/pacman.conf
 pacman-key --populate msys2 --config /tmp/pacman.conf
-pacman -Sy --config /tmp/pacman.conf --noconfirm
+# pacman -Sy --config /tmp/pacman.conf --noconfirm
 pacman -S git --config /tmp/pacman.conf --noconfirm
 pacman -S unzip --config /tmp/pacman.conf --noconfirm
 pacman -S diffutils --config /tmp/pacman.conf --noconfirm
